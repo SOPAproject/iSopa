@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C8CFAA15AC046900FE6A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFA915AC046900FE6A0A /* UIKit.framework */; };
+		30C8CFAC15AC046900FE6A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFAB15AC046900FE6A0A /* Foundation.framework */; };
+		30C8CFAE15AC046900FE6A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFAD15AC046900FE6A0A /* CoreGraphics.framework */; };
+		30C8CFB415AC046900FE6A0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C8CFB215AC046900FE6A0A /* InfoPlist.strings */; };
+		30C8CFB615AC046900FE6A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFB515AC046900FE6A0A /* main.m */; };
+		30C8CFBA15AC046900FE6A0A /* iSopaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFB915AC046900FE6A0A /* iSopaAppDelegate.m */; };
+		30C8CFBD15AC046900FE6A0A /* iSopaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFBC15AC046900FE6A0A /* iSopaViewController.m */; };
+		30C8CFC015AC046900FE6A0A /* iSopaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C8CFBE15AC046900FE6A0A /* iSopaViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30C8CFA515AC046900FE6A0A /* iSopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C8CFA915AC046900FE6A0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30C8CFAB15AC046900FE6A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30C8CFAD15AC046900FE6A0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		30C8CFB115AC046900FE6A0A /* iSopa-Info.plist */ = {isa = PBXFileReference; path = "iSopa-Info.plist"; sourceTree = "<group>"; };
+		30C8CFB315AC046900FE6A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30C8CFB515AC046900FE6A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30C8CFB715AC046900FE6A0A /* iSopa-Prefix.pch */ = {isa = PBXFileReference; path = "iSopa-Prefix.pch"; sourceTree = "<group>"; };
+		30C8CFB815AC046900FE6A0A /* iSopaAppDelegate.h */ = {isa = PBXFileReference; path = iSopaAppDelegate.h; sourceTree = "<group>"; };
+		30C8CFB915AC046900FE6A0A /* iSopaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSopaAppDelegate.m; sourceTree = "<group>"; };
+		30C8CFBB15AC046900FE6A0A /* iSopaViewController.h */ = {isa = PBXFileReference; path = iSopaViewController.h; sourceTree = "<group>"; };
+		30C8CFBC15AC046900FE6A0A /* iSopaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSopaViewController.m; sourceTree = "<group>"; };
+		30C8CFBF15AC046900FE6A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iSopaViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C8CFA215AC046900FE6A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C8CFAA15AC046900FE6A0A /* UIKit.framework in Frameworks */,
+				30C8CFAC15AC046900FE6A0A /* Foundation.framework in Frameworks */,
+				30C8CFAE15AC046900FE6A0A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C8CF9A15AC046900FE6A0A = {
+			isa = PBXGroup;
+			children = (
+				30C8CFAF15AC046900FE6A0A /* iSopa */,
+				30C8CFA815AC046900FE6A0A /* Frameworks */,
+				30C8CFA615AC046900FE6A0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C8CFA615AC046900FE6A0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C8CFA515AC046900FE6A0A /* iSopa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C8CFA815AC046900FE6A0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30C8CFA915AC046900FE6A0A /* UIKit.framework */,
+				30C8CFAB15AC046900FE6A0A /* Foundation.framework */,
+				30C8CFAD15AC046900FE6A0A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30C8CFAF15AC046900FE6A0A /* iSopa */ = {
+			isa = PBXGroup;
+			children = (
+				30C8CFB815AC046900FE6A0A /* iSopaAppDelegate.h */,
+				30C8CFB915AC046900FE6A0A /* iSopaAppDelegate.m */,
+				30C8CFBB15AC046900FE6A0A /* iSopaViewController.h */,
+				30C8CFBC15AC046900FE6A0A /* iSopaViewController.m */,
+				30C8CFBE15AC046900FE6A0A /* iSopaViewController.xib */,
+				30C8CFB015AC046900FE6A0A /* Supporting Files */,
+			);
+			path = iSopa;
+			sourceTree = "<group>";
+		};
+		30C8CFB015AC046900FE6A0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30C8CFB115AC046900FE6A0A /* iSopa-Info.plist */,
+				30C8CFB215AC046900FE6A0A /* InfoPlist.strings */,
+				30C8CFB515AC046900FE6A0A /* main.m */,
+				30C8CFB715AC046900FE6A0A /* iSopa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C8CFA415AC046900FE6A0A /* iSopa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C8CFC315AC046900FE6A0A /* Build configuration list for PBXNativeTarget "iSopa" */;
+			buildPhases = (
+				30C8CFA115AC046900FE6A0A /* Sources */,
+				30C8CFA215AC046900FE6A0A /* Frameworks */,
+				30C8CFA315AC046900FE6A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSopa;
+			productName = iSopa;
+			productReference = 30C8CFA515AC046900FE6A0A /* iSopa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C8CF9C15AC046900FE6A0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = AIST;
+			};
+			buildConfigurationList = 30C8CF9F15AC046900FE6A0A /* Build configuration list for PBXProject "iSopa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30C8CF9A15AC046900FE6A0A;
+			productRefGroup = 30C8CFA615AC046900FE6A0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C8CFA415AC046900FE6A0A /* iSopa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C8CFA315AC046900FE6A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C8CFB415AC046900FE6A0A /* InfoPlist.strings in Resources */,
+				30C8CFC015AC046900FE6A0A /* iSopaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C8CFA115AC046900FE6A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C8CFB615AC046900FE6A0A /* main.m in Sources */,
+				30C8CFBA15AC046900FE6A0A /* iSopaAppDelegate.m in Sources */,
+				30C8CFBD15AC046900FE6A0A /* iSopaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30C8CFB215AC046900FE6A0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C8CFB315AC046900FE6A0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		30C8CFBE15AC046900FE6A0A /* iSopaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C8CFBF15AC046900FE6A0A /* en */,
+			);
+			name = iSopaViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30C8CFC115AC046900FE6A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30C8CFC215AC046900FE6A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C8CFC415AC046900FE6A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSopa/iSopa-Prefix.pch";
+				INFOPLIST_FILE = "iSopa/iSopa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		30C8CFC515AC046900FE6A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSopa/iSopa-Prefix.pch";
+				INFOPLIST_FILE = "iSopa/iSopa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C8CF9F15AC046900FE6A0A /* Build configuration list for PBXProject "iSopa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C8CFC115AC046900FE6A0A /* Debug */,
+				30C8CFC215AC046900FE6A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C8CFC315AC046900FE6A0A /* Build configuration list for PBXNativeTarget "iSopa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C8CFC415AC046900FE6A0A /* Debug */,
+				30C8CFC515AC046900FE6A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C8CF9C15AC046900FE6A0A /* Project object */;
+}
