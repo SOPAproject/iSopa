@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3033532315AEB4A500E5FBF8 /* fft.m in Sources */ = {isa = PBXBuildFile; fileRef = 3033532215AEB4A500E5FBF8 /* fft.m */; };
+		30491E6715BFB28400C48B00 /* scroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 30491E6615BFB28400C48B00 /* scroller.m */; };
+		30491E7115BFB69000C48B00 /* iSopaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30491E6F15BFB69000C48B00 /* iSopaViewController.xib */; };
 		30C8CFAA15AC046900FE6A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFA915AC046900FE6A0A /* UIKit.framework */; };
 		30C8CFAC15AC046900FE6A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFAB15AC046900FE6A0A /* Foundation.framework */; };
 		30C8CFAE15AC046900FE6A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFAD15AC046900FE6A0A /* CoreGraphics.framework */; };
@@ -14,23 +17,43 @@
 		30C8CFB615AC046900FE6A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFB515AC046900FE6A0A /* main.m */; };
 		30C8CFBA15AC046900FE6A0A /* iSopaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFB915AC046900FE6A0A /* iSopaAppDelegate.m */; };
 		30C8CFBD15AC046900FE6A0A /* iSopaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFBC15AC046900FE6A0A /* iSopaViewController.m */; };
-		30C8CFC015AC046900FE6A0A /* iSopaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C8CFBE15AC046900FE6A0A /* iSopaViewController.xib */; };
+		30C8CFCA15AC063000FE6A0A /* SopaQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFC815AC062F00FE6A0A /* SopaQueue.m */; };
+		30C8CFCC15AC06CE00FE6A0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFCB15AC06CE00FE6A0A /* AudioToolbox.framework */; };
+		30E7275D15C75FC700C9E040 /* default.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275915C75FC700C9E040 /* default.gif */; };
+		30E7275E15C75FC700C9E040 /* kusa22k.sopa in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275A15C75FC700C9E040 /* kusa22k.sopa */; };
+		30E7275F15C75FC700C9E040 /* phase512.bin in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275B15C75FC700C9E040 /* phase512.bin */; };
+		30E7276015C75FC700C9E040 /* hrtf512.bin in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275C15C75FC700C9E040 /* hrtf512.bin */; };
+		30E7276415C761E500C9E040 /* panther22k.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30E7276215C761E500C9E040 /* panther22k.gif */; };
+		30E7276515C761E500C9E040 /* panther22k.sopa in Resources */ = {isa = PBXBuildFile; fileRef = 30E7276315C761E500C9E040 /* panther22k.sopa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3033532015AEB48700E5FBF8 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		3033532215AEB4A500E5FBF8 /* fft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fft.m; sourceTree = "<group>"; };
+		30491E6515BFB28400C48B00 /* scroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scroller.h; sourceTree = "<group>"; };
+		30491E6615BFB28400C48B00 /* scroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scroller.m; sourceTree = "<group>"; };
+		30491E7015BFB69000C48B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iSopaViewController.xib; sourceTree = "<group>"; };
 		30C8CFA515AC046900FE6A0A /* iSopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C8CFA915AC046900FE6A0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30C8CFAB15AC046900FE6A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30C8CFAD15AC046900FE6A0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		30C8CFB115AC046900FE6A0A /* iSopa-Info.plist */ = {isa = PBXFileReference; path = "iSopa-Info.plist"; sourceTree = "<group>"; };
+		30C8CFB115AC046900FE6A0A /* iSopa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSopa-Info.plist"; sourceTree = "<group>"; };
 		30C8CFB315AC046900FE6A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30C8CFB515AC046900FE6A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30C8CFB715AC046900FE6A0A /* iSopa-Prefix.pch */ = {isa = PBXFileReference; path = "iSopa-Prefix.pch"; sourceTree = "<group>"; };
-		30C8CFB815AC046900FE6A0A /* iSopaAppDelegate.h */ = {isa = PBXFileReference; path = iSopaAppDelegate.h; sourceTree = "<group>"; };
+		30C8CFB715AC046900FE6A0A /* iSopa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSopa-Prefix.pch"; sourceTree = "<group>"; };
+		30C8CFB815AC046900FE6A0A /* iSopaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSopaAppDelegate.h; sourceTree = "<group>"; };
 		30C8CFB915AC046900FE6A0A /* iSopaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSopaAppDelegate.m; sourceTree = "<group>"; };
-		30C8CFBB15AC046900FE6A0A /* iSopaViewController.h */ = {isa = PBXFileReference; path = iSopaViewController.h; sourceTree = "<group>"; };
+		30C8CFBB15AC046900FE6A0A /* iSopaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSopaViewController.h; sourceTree = "<group>"; };
 		30C8CFBC15AC046900FE6A0A /* iSopaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSopaViewController.m; sourceTree = "<group>"; };
-		30C8CFBF15AC046900FE6A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iSopaViewController.xib; sourceTree = "<group>"; };
+		30C8CFC815AC062F00FE6A0A /* SopaQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SopaQueue.m; sourceTree = "<group>"; };
+		30C8CFC915AC062F00FE6A0A /* SopaQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SopaQueue.h; sourceTree = "<group>"; };
+		30C8CFCB15AC06CE00FE6A0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		30E7275915C75FC700C9E040 /* default.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = default.gif; path = Resource/default.gif; sourceTree = "<group>"; };
+		30E7275A15C75FC700C9E040 /* kusa22k.sopa */ = {isa = PBXFileReference; lastKnownFileType = file; name = kusa22k.sopa; path = Resource/kusa22k.sopa; sourceTree = "<group>"; };
+		30E7275B15C75FC700C9E040 /* phase512.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = phase512.bin; path = Resource/phase512.bin; sourceTree = "<group>"; };
+		30E7275C15C75FC700C9E040 /* hrtf512.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = hrtf512.bin; path = Resource/hrtf512.bin; sourceTree = "<group>"; };
+		30E7276215C761E500C9E040 /* panther22k.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = panther22k.gif; path = Resource/panther22k.gif; sourceTree = "<group>"; };
+		30E7276315C761E500C9E040 /* panther22k.sopa */ = {isa = PBXFileReference; lastKnownFileType = file; name = panther22k.sopa; path = Resource/panther22k.sopa; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C8CFCC15AC06CE00FE6A0A /* AudioToolbox.framework in Frameworks */,
 				30C8CFAA15AC046900FE6A0A /* UIKit.framework in Frameworks */,
 				30C8CFAC15AC046900FE6A0A /* Foundation.framework in Frameworks */,
 				30C8CFAE15AC046900FE6A0A /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +74,7 @@
 		30C8CF9A15AC046900FE6A0A = {
 			isa = PBXGroup;
 			children = (
+				30C8CFCB15AC06CE00FE6A0A /* AudioToolbox.framework */,
 				30C8CFAF15AC046900FE6A0A /* iSopa */,
 				30C8CFA815AC046900FE6A0A /* Frameworks */,
 				30C8CFA615AC046900FE6A0A /* Products */,
@@ -81,7 +106,13 @@
 				30C8CFB915AC046900FE6A0A /* iSopaAppDelegate.m */,
 				30C8CFBB15AC046900FE6A0A /* iSopaViewController.h */,
 				30C8CFBC15AC046900FE6A0A /* iSopaViewController.m */,
-				30C8CFBE15AC046900FE6A0A /* iSopaViewController.xib */,
+				30C8CFC915AC062F00FE6A0A /* SopaQueue.h */,
+				30C8CFC815AC062F00FE6A0A /* SopaQueue.m */,
+				30491E6515BFB28400C48B00 /* scroller.h */,
+				30491E6615BFB28400C48B00 /* scroller.m */,
+				3033532015AEB48700E5FBF8 /* fft.h */,
+				3033532215AEB4A500E5FBF8 /* fft.m */,
+				30491E6F15BFB69000C48B00 /* iSopaViewController.xib */,
 				30C8CFB015AC046900FE6A0A /* Supporting Files */,
 			);
 			path = iSopa;
@@ -90,6 +121,12 @@
 		30C8CFB015AC046900FE6A0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30E7276215C761E500C9E040 /* panther22k.gif */,
+				30E7276315C761E500C9E040 /* panther22k.sopa */,
+				30E7275915C75FC700C9E040 /* default.gif */,
+				30E7275A15C75FC700C9E040 /* kusa22k.sopa */,
+				30E7275B15C75FC700C9E040 /* phase512.bin */,
+				30E7275C15C75FC700C9E040 /* hrtf512.bin */,
 				30C8CFB115AC046900FE6A0A /* iSopa-Info.plist */,
 				30C8CFB215AC046900FE6A0A /* InfoPlist.strings */,
 				30C8CFB515AC046900FE6A0A /* main.m */,
@@ -124,7 +161,7 @@
 		30C8CF9C15AC046900FE6A0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = AIST;
 			};
 			buildConfigurationList = 30C8CF9F15AC046900FE6A0A /* Build configuration list for PBXProject "iSopa" */;
@@ -150,7 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C8CFB415AC046900FE6A0A /* InfoPlist.strings in Resources */,
-				30C8CFC015AC046900FE6A0A /* iSopaViewController.xib in Resources */,
+				30491E7115BFB69000C48B00 /* iSopaViewController.xib in Resources */,
+				30E7275D15C75FC700C9E040 /* default.gif in Resources */,
+				30E7275E15C75FC700C9E040 /* kusa22k.sopa in Resources */,
+				30E7275F15C75FC700C9E040 /* phase512.bin in Resources */,
+				30E7276015C75FC700C9E040 /* hrtf512.bin in Resources */,
+				30E7276415C761E500C9E040 /* panther22k.gif in Resources */,
+				30E7276515C761E500C9E040 /* panther22k.sopa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,26 +207,29 @@
 				30C8CFB615AC046900FE6A0A /* main.m in Sources */,
 				30C8CFBA15AC046900FE6A0A /* iSopaAppDelegate.m in Sources */,
 				30C8CFBD15AC046900FE6A0A /* iSopaViewController.m in Sources */,
+				30C8CFCA15AC063000FE6A0A /* SopaQueue.m in Sources */,
+				3033532315AEB4A500E5FBF8 /* fft.m in Sources */,
+				30491E6715BFB28400C48B00 /* scroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		30491E6F15BFB69000C48B00 /* iSopaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30491E7015BFB69000C48B00 /* en */,
+			);
+			name = iSopaViewController.xib;
+			sourceTree = "<group>";
+		};
 		30C8CFB215AC046900FE6A0A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				30C8CFB315AC046900FE6A0A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		30C8CFBE15AC046900FE6A0A /* iSopaViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30C8CFBF15AC046900FE6A0A /* en */,
-			);
-			name = iSopaViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,6 +319,7 @@
 				30C8CFC515AC046900FE6A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
