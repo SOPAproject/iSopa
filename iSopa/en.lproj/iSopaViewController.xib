@@ -42,6 +42,7 @@
 						<int key="NSvFlags">261</int>
 						<string key="NSFrame">{{0, 31}, {320, 80}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:190</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -53,6 +54,7 @@
 						<int key="NSvFlags">294</int>
 						<string key="NSFrame">{{2, 0}, {256, 31}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="188861795"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -62,7 +64,7 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<string key="IBUIText"/>
 						<int key="IBUIBorderStyle">3</int>
-						<string key="IBUIPlaceholder">http://staff.aist.go.jp/ashihara-k/inst_panther.gif</string>
+						<string key="IBUIPlaceholder">Enter URL of a SOPA file</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
@@ -91,6 +93,7 @@
 						<int key="NSvFlags">295</int>
 						<string key="NSFrame">{{260, 0}, {60, 30}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="967112295"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -130,6 +133,7 @@
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="745501122"/>
 				<reference key="IBUIBackgroundColor" ref="285982590"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
