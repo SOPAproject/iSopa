@@ -397,8 +397,7 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
     
     SInt16 *output = inBuffer->mAudioData;
     
-    if(player.numBytesWritten >= player.nBytesRead - 44){
-        [player setIsPlaying:NO];
+    if(!player.isPlaying){
         [player stop:YES];
         return;
     }
@@ -557,6 +556,16 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
                 player.numBytesWritten += 4;
                 player.numOffset += 4;
                 if(player.numBytesWritten >= player.nBytesRead - 44){
+                    if(!player.isLoaded){
+                        UIAlertView *alert = [[UIAlertView alloc]
+                                              initWithTitle : @"StreamingError"
+                                              message : @"Terminated because not enough data are loaded"
+                                              delegate : nil cancelButtonTitle : @"OK"
+                                              otherButtonTitles : nil];
+                        [alert show];
+                        [alert release];    
+                        NSLog(@"Insufficient data loaded");
+                    }
                     iFnum = player.iFrames;
                     [player setIsPlaying:NO];
                     [player stop:YES];

@@ -35,15 +35,15 @@
 			</object>
 			<object class="IBUIView" id="774585933">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">274</int>
+				<int key="NSvFlags">282</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIScrollView" id="967112295">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">261</int>
-						<string key="NSFrame">{{0, 31}, {320, 80}}</string>
+						<int key="NSvFlags">263</int>
+						<string key="NSFrame">{{0, 20}, {320, 440}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="745501122"/>
 						<string key="NSReuseIdentifierKey">_NS:190</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -94,7 +94,6 @@
 						<string key="NSFrame">{{260, 0}, {60, 30}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="967112295"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUIContentMode">10</int>
@@ -134,7 +133,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="745501122"/>
+				<reference key="NSNextKeyView" ref="967112295"/>
 				<reference key="IBUIBackgroundColor" ref="285982590"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>

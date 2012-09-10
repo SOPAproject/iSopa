@@ -35,8 +35,11 @@
     scroller *scrollview;
     SInt16 imageWidth;
     SInt16 iniWidth;
+    SInt16 iOffset;
+    SInt16 iOrientation;
     BOOL isYet;
     BOOL isTerminatedByUser;
+    BOOL isRotate;
     IBOutlet UIButton *setButton;
     IBOutlet UITextField *textField;
     IBOutlet UILabel *myLabel;
@@ -44,8 +47,11 @@
 
 @property SInt16 imageWidth;
 @property SInt16 iniWidth;
+@property SInt16 iOffset;
+@property SInt16 iOrientation;
 @property BOOL isYet;
 @property BOOL isTerminatedByUser;
+@property BOOL isRotate;
 @property(nonatomic, retain)IBOutlet UIButton *setButton;
 @property(nonatomic, retain)IBOutlet UITextField *textField;
 @property(nonatomic, retain)IBOutlet UILabel *myLabel;
