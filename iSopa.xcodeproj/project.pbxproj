@@ -10,6 +10,8 @@
 		3033532315AEB4A500E5FBF8 /* fft.m in Sources */ = {isa = PBXBuildFile; fileRef = 3033532215AEB4A500E5FBF8 /* fft.m */; };
 		30491E6715BFB28400C48B00 /* scroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 30491E6615BFB28400C48B00 /* scroller.m */; };
 		30491E7115BFB69000C48B00 /* iSopaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30491E6F15BFB69000C48B00 /* iSopaViewController.xib */; };
+		30AE463916A772C500366F3B /* sopa22k.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30AE463716A772C500366F3B /* sopa22k.gif */; };
+		30AE463A16A772C500366F3B /* sopa22k.sopa in Resources */ = {isa = PBXBuildFile; fileRef = 30AE463816A772C500366F3B /* sopa22k.sopa */; };
 		30C8CFAA15AC046900FE6A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFA915AC046900FE6A0A /* UIKit.framework */; };
 		30C8CFAC15AC046900FE6A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFAB15AC046900FE6A0A /* Foundation.framework */; };
 		30C8CFAE15AC046900FE6A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFAD15AC046900FE6A0A /* CoreGraphics.framework */; };
@@ -20,7 +22,6 @@
 		30C8CFCA15AC063000FE6A0A /* SopaQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C8CFC815AC062F00FE6A0A /* SopaQueue.m */; };
 		30C8CFCC15AC06CE00FE6A0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C8CFCB15AC06CE00FE6A0A /* AudioToolbox.framework */; };
 		30E7275D15C75FC700C9E040 /* default.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275915C75FC700C9E040 /* default.gif */; };
-		30E7275E15C75FC700C9E040 /* kusa22k.sopa in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275A15C75FC700C9E040 /* kusa22k.sopa */; };
 		30E7275F15C75FC700C9E040 /* phase512.bin in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275B15C75FC700C9E040 /* phase512.bin */; };
 		30E7276015C75FC700C9E040 /* hrtf512.bin in Resources */ = {isa = PBXBuildFile; fileRef = 30E7275C15C75FC700C9E040 /* hrtf512.bin */; };
 		30E7276415C761E500C9E040 /* panther22k.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30E7276215C761E500C9E040 /* panther22k.gif */; };
@@ -33,6 +34,8 @@
 		30491E6515BFB28400C48B00 /* scroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scroller.h; sourceTree = "<group>"; };
 		30491E6615BFB28400C48B00 /* scroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scroller.m; sourceTree = "<group>"; };
 		30491E7015BFB69000C48B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iSopaViewController.xib; sourceTree = "<group>"; };
+		30AE463716A772C500366F3B /* sopa22k.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sopa22k.gif; path = Resource/sopa22k.gif; sourceTree = "<group>"; };
+		30AE463816A772C500366F3B /* sopa22k.sopa */ = {isa = PBXFileReference; lastKnownFileType = file; name = sopa22k.sopa; path = Resource/sopa22k.sopa; sourceTree = "<group>"; };
 		30C8CFA515AC046900FE6A0A /* iSopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C8CFA915AC046900FE6A0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30C8CFAB15AC046900FE6A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,7 +52,6 @@
 		30C8CFC915AC062F00FE6A0A /* SopaQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SopaQueue.h; sourceTree = "<group>"; };
 		30C8CFCB15AC06CE00FE6A0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		30E7275915C75FC700C9E040 /* default.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = default.gif; path = Resource/default.gif; sourceTree = "<group>"; };
-		30E7275A15C75FC700C9E040 /* kusa22k.sopa */ = {isa = PBXFileReference; lastKnownFileType = file; name = kusa22k.sopa; path = Resource/kusa22k.sopa; sourceTree = "<group>"; };
 		30E7275B15C75FC700C9E040 /* phase512.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = phase512.bin; path = Resource/phase512.bin; sourceTree = "<group>"; };
 		30E7275C15C75FC700C9E040 /* hrtf512.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = hrtf512.bin; path = Resource/hrtf512.bin; sourceTree = "<group>"; };
 		30E7276215C761E500C9E040 /* panther22k.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = panther22k.gif; path = Resource/panther22k.gif; sourceTree = "<group>"; };
@@ -121,10 +123,11 @@
 		30C8CFB015AC046900FE6A0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30AE463716A772C500366F3B /* sopa22k.gif */,
+				30AE463816A772C500366F3B /* sopa22k.sopa */,
 				30E7276215C761E500C9E040 /* panther22k.gif */,
 				30E7276315C761E500C9E040 /* panther22k.sopa */,
 				30E7275915C75FC700C9E040 /* default.gif */,
-				30E7275A15C75FC700C9E040 /* kusa22k.sopa */,
 				30E7275B15C75FC700C9E040 /* phase512.bin */,
 				30E7275C15C75FC700C9E040 /* hrtf512.bin */,
 				30C8CFB115AC046900FE6A0A /* iSopa-Info.plist */,
@@ -189,11 +192,12 @@
 				30C8CFB415AC046900FE6A0A /* InfoPlist.strings in Resources */,
 				30491E7115BFB69000C48B00 /* iSopaViewController.xib in Resources */,
 				30E7275D15C75FC700C9E040 /* default.gif in Resources */,
-				30E7275E15C75FC700C9E040 /* kusa22k.sopa in Resources */,
 				30E7275F15C75FC700C9E040 /* phase512.bin in Resources */,
 				30E7276015C75FC700C9E040 /* hrtf512.bin in Resources */,
 				30E7276415C761E500C9E040 /* panther22k.gif in Resources */,
 				30E7276515C761E500C9E040 /* panther22k.sopa in Resources */,
+				30AE463916A772C500366F3B /* sopa22k.gif in Resources */,
+				30AE463A16A772C500366F3B /* sopa22k.sopa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

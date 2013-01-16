@@ -77,7 +77,7 @@
     
     [player setIsPlaying:NO];
     
-    NSString *textStr = @"http://staff.aist.go.jp/ashihara-k/resource/panther22k.sopa";
+    NSString *textStr = @"http://staff.aist.go.jp/ashihara-k/resource/sopa22k.sopa";
     [textField setText:textStr];
     isRotate = FALSE;
     [self setURLText];
@@ -359,7 +359,7 @@
     
     setButton.enabled = YES;
     if(isTerminatedByUser)
-        newStr = [NSString stringWithFormat:@"%lu bytes reproduced",uVal];
+        newStr = [NSString stringWithFormat:@"%lu bytes reproduced\nand terminated",uVal];
     else
         newStr = [NSString stringWithFormat:@"%lu bytes reproduced\nand finished",uVal];
     myLabel.text = newStr;

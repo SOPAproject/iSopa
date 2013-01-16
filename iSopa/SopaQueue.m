@@ -357,7 +357,7 @@
     else{
         [myConn cancel];
         [myConn release];
-    }
+    }   
     NSNotification* notification;
     notification = [NSNotification notificationWithName:@"sopaReproductionFinished" object:self]; 
     NSNotificationCenter* center;
@@ -390,6 +390,7 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
     UInt32 numPackets = [player numPacketsToRead];
     UInt32 numBytes = numPackets * sizeof(SInt16) * 2;
     SInt32 iInt,sSample,iNum,iPos,iPosImage;
+    SInt16 iMarg;
     double dSpL,dSpR,dSpImageL,dSpImageR,dPhaseL,dPhaseR,dPhaseImageL,dPhaseImageR;
     double dHan;
     
@@ -398,7 +399,6 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
     SInt16 *output = inBuffer->mAudioData;
     
     if(!player.isPlaying){
-        [player stop:YES];
         return;
     }
     else if(player.numOffset == 44){
@@ -453,7 +453,7 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
                 dir[iCount / 2 + 1] = nSin;
                 nSin = [player getData:iOffset + iCount + 1];
                 dir[iCount / 2] = nSin;                // Direction
-                if(nSin > 72 || nSin < 0)
+                if(nSin < 0)
                     NSLog(@"Wrong value!");
             }
             nSin = [player getData:iOffset + iCount + 2];
@@ -466,7 +466,7 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
         
         for(iNum = 0;iNum < player.iHlf;iNum ++){
             SInt32 iFreq = (iNum / player.iRatio);
-            if(dir[iNum] <= 0 || iFreq == 0){
+            if(dir[iNum] <= 0 || iFreq == 0 || dir[iNum] == 255){
                 dSpL = dSpR = realRight[iNum];
                 dSpImageL = dSpImageR = realRight[iNum];
                 dPhaseL = dPhaseR = imageRight[iNum];
@@ -549,13 +549,14 @@ static void outputCallback(void *inUserData,AudioQueueRef inAQ,AudioQueueBufferR
             }
         }
         
+        iMarg = player.iRem * 4 + 44;
         for(iCount = 0;iCount < player.iSize;iCount ++){
             if(iCount < player.iProc){
                 *output++ = player.ResultLeft[iCount];
                 *output++ = player.ResultRight[iCount];
                 player.numBytesWritten += 4;
                 player.numOffset += 4;
-                if(player.numBytesWritten >= player.nBytesRead - 44){
+                if(player.numBytesWritten >= player.nBytesRead - iMarg){
                     if(!player.isLoaded){
                         UIAlertView *alert = [[UIAlertView alloc]
                                               initWithTitle : @"StreamingError"
