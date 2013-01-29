@@ -207,6 +207,7 @@
                                           otherButtonTitles : nil];
                 [alertView show];
                 [alertView release]; 
+                myLabel.text = @"Check path to the SOPA file\nSOPA player for iPhone\niSOPA\nCopyright (c) 2012, AIST";
                 return;
             }
             if([player numPacketsToRead] != 0){
@@ -245,7 +246,7 @@
     myLabel.textColor = [UIColor lightTextColor];
     myLabel.numberOfLines = 4;
     if(player.isPlaying){
-        NSString *newStr = [NSString stringWithFormat:@"Sampling rate %d Hz\nFrame size %d\nScroll imageview to control the panning\nTap on imageview to stop reproduction",player.numSampleRate,player.iSize];
+        NSString *newStr = [NSString stringWithFormat:@"Sampling rate %ld Hz\nFrame size %d\nScroll imageview to control the panning\nTap on imageview to stop reproduction",player.numSampleRate,player.iSize];
         myLabel.text = newStr;
     }
     else{
